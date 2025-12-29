@@ -21,6 +21,9 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
-    "paths": {}
+    "paths": {
+      "@app/configration": ["libs/configration/src"],
+      "@app/configration/*": ["libs/configration/src/*"]
+    }
   }
 }

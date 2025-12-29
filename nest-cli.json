@@ -19,6 +19,15 @@
         "tsConfigPath": "apps/api/tsconfig.app.json"
       }
     },
+    "configration": {
+      "type": "library",
+      "root": "libs/configration",
+      "entryFile": "index",
+      "sourceRoot": "libs/configration/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/configration/tsconfig.lib.json"
+      }
+    },
     "worker": {
       "type": "application",
       "root": "apps/worker",

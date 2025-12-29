@@ -24,8 +24,10 @@
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
+    "joi": "^18.0.2",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
   },
@@ -37,6 +39,7 @@
     "@nestjs/testing": "^11.0.1",
     "@types/express": "^5.0.0",
     "@types/jest": "^30.0.0",
+    "@types/joi": "^17.2.2",
     "@types/node": "^22.10.7",
     "@types/supertest": "^6.0.3",
     "@typescript-eslint/eslint-plugin": "^8.50.1",
@@ -85,7 +88,11 @@
     "coverageDirectory": "./coverage",
     "testEnvironment": "node",
     "roots": [
-      "<rootDir>/apps/"
-    ]
+      "<rootDir>/apps/",
+      "<rootDir>/libs/"
+    ],
+    "moduleNameMapper": {
+      "^@app/configration(|/.*)$": "<rootDir>/libs/configration/src/$1"
+    }
   }
 }
