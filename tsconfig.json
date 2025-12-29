@@ -23,7 +23,9 @@
     "noFallthroughCasesInSwitch": false,
     "paths": {
       "@app/configration": ["libs/configration/src"],
-      "@app/configration/*": ["libs/configration/src/*"]
+      "@app/configration/*": ["libs/configration/src/*"],
+      "@app/database": ["libs/database/src"],
+      "@app/database/*": ["libs/database/src/*"]
     }
   }
 }
